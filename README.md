@@ -13,9 +13,23 @@ The difference between both is that in order to use Github you NEED Git. Git is 
 
 
 ---
-## Initial Setup
+## Initial Setup  
+A [**Github Account**](https://github.com) and a [**Cloud 9 Account**](https://c9.com) is needed.
 
+Once you have created your Github account now we have to set up the SSH key, which connects your local machine(c9 or nitrous) to your remote(Github).  
 
+ 1. Click profile icon on the upper right hand corner  
+ 2. Go to settings  
+ 3. Click the SSH key tab  
+ 4. Click add SSH key and title the remote whatever your local machine is called   
+ 5. On the SSH Key for cloud 9 you click on the settings icon on your home page  
+ 6. Click on the SSH key tab and copy and paste the Default SSH key on your Github key box  
+ 7. Now click Add Key  
+ 
+**Keep in mind** unless you signed up for Cloud 9 with your github account you should:  
+1. git init (Initializes git in your local machine)  
+2. git config --global user.name "First Last"  
+git config --global user.name "username@email.com" (the e-mail address you used to sign up for github)
 
 ---
 ## Repository Setup
