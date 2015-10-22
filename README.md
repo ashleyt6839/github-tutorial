@@ -5,7 +5,7 @@ _by Ashley Toro_
 ---
 ## Git vs. GitHub
 ###Git  
-Git is version control and as said in the name, it allows you to be able to save diiferent versions of code on easy access. Git allows you to take snapshots of code and keeps track of the changes youve done to your files with each snapshot.  
+Git is _version control_ and as said in the name, it allows you to be able to save diiferent versions of code on easy access. Git allows you to take snapshots of code and keeps track of the changes youve done to your files with each snapshot.  
 ###Github  
 Github is set up in the cloud. That means that code that you create is stored in the cloud and your able to colaborate withothers not only on yoru code but with others aswell.  
 ###Difference?  
@@ -72,3 +72,17 @@ Now next time we push we don't have to type -u origin master because it has alre
 
 ---
 ## Workflow & Commands
+
+In _cloud 9_ you will need to do `git status` once in a while in order to check that what you add really adds to the stage ready to be commited.  
+Here are some basic comannds in git:  
+
+ * `git add`: adds the current directory onto the stage   
+ Use: `git add README.md`(README.md or whatever your file name is) 
+ * `git commit -m "short message"`: short present tense comments that tell you what you did to that block of code. Commiting shouldnt happen everytime you write two lines of code however you should do it to save your code and refer back to it. It also takes a snapshot of the code.
+ Use: `git commit -m "Write file name"`
+ * `git log`: allows you to see your past commits  
+ (Press Q to quit)
+ * `git init`: initializes git in our local machine
+ * `git diff`: allows you to see the difference between your old code and the new one
+ * `git push`: pushes your code to your remote
+ * `git add file.ext`: adds files to the stage
