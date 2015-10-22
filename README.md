@@ -5,11 +5,11 @@ _by Ashley Toro_
 ---
 ## Git vs. GitHub
 ###Git  
-Git is _version control_ and as said in the name, it allows you to be able to save diiferent versions of code on easy access. Git allows you to take snapshots of code and keeps track of the changes youve done to your files with each snapshot.  
+Git is _version control_ and as said in the name, it allows you to be able to save diiferent versions of code on easy access. Git allows you to take _snapshots_ of code and keeps track of the changes youve done to your files with each snapshot.  
 ###Github  
 Github is set up in the cloud. That means that code that you create is stored in the cloud and your able to colaborate withothers not only on yoru code but with others aswell.  
 ###Difference?  
-The difference between both is that in order to use Github you NEED Git. Git is intended to use be used for solo work and Github is great for colaboratin work. When saving code Github stores it in the cloud as where Git stores your snapshots of code in your local machine that your using.
+The difference between both is that in order to use Github you **NEED** Git. Git is intended to use be used for solo work and Github is great for colaboratin work. When saving code Github stores it in the cloud as where Git stores your snapshots of code in your local machine that your using.
 
 
 ---
@@ -33,22 +33,22 @@ git config --global user.name "username@email.com" (the e-mail address you used 
 
 ---
 ## Repository Setup
-Let's create our first repo!  
+Let's create our first _repo_!  
 With our knowldge of the command line lets:  
-make a new directory and call it github-learning and lets get into that directory   
+make a new directory and call it _github-learning_ and lets get into that _directory_   
 
 * `mkdir github-learning`  
 * `cd github-learning`  
 
 Now lets create our repo!  
-make a new directory and call it first-repo and lets get into that directory  
+make a new directory and call it _first-repo_ and lets get into that directory  
 
 * `mkdir first-repo`
 *  `cd first-repo`
 
 but now lets check that were in the correct spot so lets `pwd` and check that you are in:  
 `~/workspace/github-learning/first-repo`  
-Inorder to make our first add, commit, and push we have to create a file.  
+In order to make our first add, commit, and push we have to create a file.  
 Lets create a README.md file in our first-repo:  
 `touch README.md`  
 Open the file and type into the file "This is my first repo"  
@@ -73,12 +73,12 @@ Now next time we push we don't have to type -u origin master because it has alre
 ---
 ## Workflow & Commands
 
-In _cloud 9_ you will need to do `git status` once in a while in order to check that what you add really adds to the stage ready to be commited.  
+In _cloud 9_ you will need to do `git status` once in a while in order to check that what you add really adds to the stage ready to be _commited_.  
 Here are some basic comannds in git:  
 
  * `git add`: adds the current directory onto the stage   
  Use: `git add README.md`(README.md or whatever your file name is) 
- * `git commit -m "short message"`: short present tense comments that tell you what you did to that block of code. Commiting shouldnt happen everytime you write two lines of code however you should do it to save your code and refer back to it. It also takes a snapshot of the code.
+ * `git commit -m "short message"`: short present tense comments that tell you what you did to that block of code. Commiting shouldnt happen everytime you write two lines of code however you should do it to save your code and refer back to it. It also takes a snapshot of the code.  
  Use: `git commit -m "Write file name"`
  * `git log`: allows you to see your past commits  
  (Press Q to quit)
