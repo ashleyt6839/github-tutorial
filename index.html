@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>GitHub Tutorial  by ashleyt6839</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">GitHub Tutorial </h1>
+      <h2 class="project-tagline">Let&#39;s Git Learning!</h2>
+      <a href="https://github.com/ashleyt6839/github-tutorial" class="btn">View on GitHub</a>
+      <a href="https://github.com/ashleyt6839/github-tutorial/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ashleyt6839/github-tutorial/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Ashley Toro</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<h3>
+<a id="git" class="anchor" href="#git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git</h3>
+
+<p>Git is <em>version control</em> and as said in the name, it allows you to be able to save diiferent versions of code on easy access. Git allows you to take <em>snapshots</em> of code and keeps track of the changes youve done to your files with each snapshot.  </p>
+
+<h3>
+<a id="github" class="anchor" href="#github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Github</h3>
+
+<p>Github is set up in the cloud. That means that code that you create is stored in the cloud and your able to colaborate withothers not only on yoru code but with others aswell.  </p>
+
+<h3>
+<a id="difference" class="anchor" href="#difference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Difference?</h3>
+
+<p>The difference between both is that in order to use Github you <strong>NEED</strong> Git. Git is intended to use be used for solo work and Github is great for colaboratin work. When saving code Github stores it in the cloud as where Git stores your snapshots of code in your local machine that your using.</p>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<p>A <a href="https://github.com"><strong>Github Account</strong></a> and a <a href="https://c9.com"><strong>Cloud 9 Account</strong></a> is needed.</p>
+
+<p>Once you have created your Github account now we have to set up the SSH key, which connects your local machine(c9 or nitrous) to your remote(Github).  </p>
+
+<ol>
+<li>Click profile icon on the upper right hand corner<br>
+</li>
+<li>Go to settings<br>
+</li>
+<li>Click the SSH key tab<br>
+</li>
+<li>Click add SSH key and title the remote whatever your local machine is called<br>
+</li>
+<li>On the SSH Key for cloud 9 you click on the settings icon on your home page<br>
+</li>
+<li>Click on the SSH key tab and copy and paste the Default SSH key on your Github key box<br>
+</li>
+<li>Now click Add Key<br>
+</li>
+</ol>
+
+<p><strong>Keep in mind</strong> unless you signed up for Cloud 9 with your github account you should:<br>
+1. git init (Initializes git in your local machine)<br>
+2. git config --global user.name "First Last"<br>
+git config --global user.name "<a href="mailto:username@email.com">username@email.com</a>" (the e-mail address you used to sign up for github)</p>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<p>Let's create our first <em>repo</em>!<br>
+With our knowldge of the command line lets:<br>
+make a new directory and call it <em>github-learning</em> and lets get into that <em>directory</em>   </p>
+
+<ul>
+<li>
+<code>mkdir github-learning</code><br>
+</li>
+<li>
+<code>cd github-learning</code><br>
+</li>
+</ul>
+
+<p>Now lets create our repo!<br>
+make a new directory and call it <em>first-repo</em> and lets get into that directory  </p>
+
+<ul>
+<li><code>mkdir first-repo</code></li>
+<li> <code>cd first-repo</code>
+</li>
+</ul>
+
+<p>but now lets check that were in the correct spot so lets <code>pwd</code> and check that you are in:<br>
+<code>~/workspace/github-learning/first-repo</code><br>
+In order to make our first add, commit, and push we have to create a file.<br>
+Lets create a README.md file in our first-repo:<br>
+<code>touch README.md</code><br>
+Open the file and type into the file "This is my first repo"  </p>
+
+<p>Now lets do our first add, commit, and push!<br>
+to add a file type in<br>
+<code>git add README.md</code><br>
+<code>git status</code> to check if the file was added to the stage correctly<br>
+<code>git commit -m "create my first repo"</code>  </p>
+
+<p>However, we don't have a remote to push up to:<br>
+1. Got to github and at the top right click the + at the top of the corner and click new repository<br>
+2. Your repository name HAS to be the same name as "first-repo"<br>
+3. Once you create your repository click on the SSH key and copy and paste one at a time<br>
+<code>git remote add origin git@github.com:(github username)/first-repo.git</code><br>
+press enter then copy and paste<br>
+<code>git push -u origin master</code>  </p>
+
+<p>Now next time we push we don't have to type -u origin master because it has already been set up once. </p>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<p>In <em>cloud 9</em> you will need to do <code>git status</code> once in a while in order to check that what you add really adds to the stage ready to be <em>commited</em>.<br>
+Here are some basic comannds in git:  </p>
+
+<ul>
+<li>
+<code>git add</code>: adds the current directory onto the stage<br>
+Use: <code>git add README.md</code>(README.md or whatever your file name is) </li>
+<li>
+<code>git commit -m "short message"</code>: short present tense comments that tell you what you did to that block of code. Commiting shouldnt happen everytime you write two lines of code however you should do it to save your code and refer back to it. It also takes a snapshot of the code.<br>
+Use: <code>git commit -m "Write file name"</code>
+</li>
+<li>
+<code>git log</code>: allows you to see your past commits<br>
+(Press Q to quit)</li>
+<li>
+<code>git init</code>: initializes git in our local machine</li>
+<li>
+<code>git diff</code>: allows you to see the difference between your old code and the new one</li>
+<li>
+<code>git push</code>: pushes your code to your remote</li>
+<li>
+<code>git add file.ext</code>: adds files to the stage</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ashleyt6839/github-tutorial">GitHub Tutorial </a> is maintained by <a href="https://github.com/ashleyt6839">ashleyt6839</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
